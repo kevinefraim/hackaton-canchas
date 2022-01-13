@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/footer/Footer";
-import Main from "./components/paginas/main/Main";
 import Canchas from "./components/paginas/canchas/Canchas";
 import Navbar from "./components/navbar/Navbar";
 import FieldsContext from "./store/appContext";
+import Main from "./components/paginas/main/Main";
 
 function App() {
   return (

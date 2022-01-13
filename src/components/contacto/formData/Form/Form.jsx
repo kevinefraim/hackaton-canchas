@@ -5,7 +5,7 @@ const Form = () => {
     <form className="form">
       <h4>Contacto</h4>
       <div className="form-group">
-        <label for="exampleInputName">Nombre</label>
+        <label htmlFor="exampleInputName">Nombre</label>
         <input
           type="text"
           className="form-control"
@@ -14,7 +14,7 @@ const Form = () => {
         />
       </div>
       <div className="form-group">
-        <label for="exampleInputEmail1">Email </label>
+        <label htmlFor="exampleInputEmail1">Email </label>
         <input
           type="email"
           className="form-control"
@@ -24,7 +24,7 @@ const Form = () => {
         />
       </div>
       <div className="form-group">
-        <label for="exampleFormControlTextarea1">Mensaje</label>
+        <label htmlFor="exampleFormControlTextarea1">Mensaje</label>
         <textarea
           placeholder="Ingrese su mensaje"
           className="form-control"

@@ -2,6 +2,8 @@ import { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Context } from "../../../store/appContext";
 import Cancha from "../../cancha/Cancha";
+import Loader from "../../loader/Loader";
+import "./Canchas.css";
 
 const Canchas = () => {
   const { id } = useParams();
@@ -12,14 +14,19 @@ const Canchas = () => {
   }, [info]);
 
   return (
-    <>
-      <h1>Canchas de {id}</h1>
-      {info.length > 0 ? (
-        info.map((cancha) => <Cancha key={cancha.id} {...cancha}></Cancha>)
-      ) : (
-        <h1>no hay</h1>
-      )}
-    </>
+    <main>
+      <div className="container mt-5">
+        <h1 className="text-center m-2">Canchas de {id}</h1>
+
+        <div className="cards-container mt-4">
+          {info.length > 0 ? (
+            info.map((cancha) => <Cancha key={cancha.id} {...cancha}></Cancha>)
+          ) : (
+            <Loader />
+          )}
+        </div>
+      </div>
+    </main>
   );
 };
 

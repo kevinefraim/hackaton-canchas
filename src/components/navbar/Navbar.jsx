@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="nav-container">
         <nav className="navbar navbar-light  justify-content-between">
           <div className="left-nav">
-            <Link to="/" className="links">
+            <Link to="/">
               <img src={logo} alt="logo" />
             </Link>
             <ul className="nav-list">
