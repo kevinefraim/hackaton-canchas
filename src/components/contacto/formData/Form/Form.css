@@ -1,0 +1,12 @@
+.form {
+  width: 40%;
+}
+.form input {
+  margin: 4px 0;
+}
+.form textarea {
+  margin: 4px 0;
+}
+.form button {
+  margin: 4px 0;
+}

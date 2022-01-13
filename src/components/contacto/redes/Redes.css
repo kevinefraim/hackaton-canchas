@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-redes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 110px;
+  background-color: #aaa;
+}
+.redes-img img {
+  margin: 4px;
+  height: 60px;
+}
