@@ -78,7 +78,7 @@ const Cancha = ({
                 <>
                   <button
                     onClick={() => setTime(horario)}
-                    className="mx-2 my-4  btn btn-outline-primary"
+                    className="mx-2 my-4  btn btn-outline-success"
                     disabled={reservas.find(
                       (reserva) =>
                         reserva.id === id && reserva.horario.id === horario.id

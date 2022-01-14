@@ -12,9 +12,11 @@ const SportLink = () => {
 
   return (
     <div className="container-fluid">
-      <h1 className="text-center my-3" id="canchas">
-        Nuestras canchas
-      </h1>
+      <div className="title-container">
+        <h1 className="text-center my-3 title-canchas" id="canchas">
+          Nuestras canchas
+        </h1>
+      </div>
       <div className="card-container">
         {info.map((sport) => (
           <div

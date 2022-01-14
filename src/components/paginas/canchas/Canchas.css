@@ -1,1 +1,10 @@
-
+.title-canchas {
+  color: #222;
+  padding: 10px;
+  background-color: #ded;
+  border-radius: 10px;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+}

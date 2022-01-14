@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&family=Ubuntu&display=swap");
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: "Shippori Antique B1", sans-serif;
   font-family: "Ubuntu", sans-serif;
+}
+body {
+  background-color: #eee !important;
+}
+
+.title-canchas {
+  color: #222;
+  padding: 10px;
+  background-color: #ded;
+  border-radius: 10px;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
 }

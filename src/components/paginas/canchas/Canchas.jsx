@@ -16,7 +16,9 @@ const Canchas = () => {
   return (
     <main>
       <div className="container mt-5">
-        <h1 className="text-center m-2">Canchas de {id}</h1>
+        <div className="title-container">
+          <h1 className="text-center m-2 title-canchas">Canchas de {id}</h1>
+        </div>
 
         <div className="cards-container mt-4">
           {info.length > 0 ? (

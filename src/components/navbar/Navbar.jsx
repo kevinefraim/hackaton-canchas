@@ -16,7 +16,7 @@ const Navbar = () => {
             <ul className="nav-list">
               <li>
                 <Link to="/" className="links">
-                  Inicio
+                  <i class="bi bi-house-fill"></i>
                 </Link>
               </li>
               <li>
