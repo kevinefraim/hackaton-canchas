@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 .nav-container {
-  background-color: #5bc8f3;
+  background-color: #eee;
+  margin-bottom: 4px;
 }
 .left-nav {
   display: flex;
@@ -55,4 +56,7 @@
 .nav-list li:hover {
   font-size: 18px;
   margin: 5px;
+}
+.cart-icon {
+  font-size: 24px;
 }

@@ -8,16 +8,16 @@ import Main from "./components/paginas/main/Main";
 
 function App() {
   return (
-    <FieldsContext>
-      <Router>
+    <Router>
+      <FieldsContext>
         <Navbar />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/:id" element={<Canchas />} />
         </Routes>
         <Footer />
-      </Router>
-    </FieldsContext>
+      </FieldsContext>
+    </Router>
   );
 }
 

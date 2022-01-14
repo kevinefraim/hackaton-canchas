@@ -7,12 +7,12 @@ const SportLink = () => {
   const { info, getInfo } = useContext(Context);
 
   useEffect(() => {
-    getInfo("deportes");
-  }, []);
+    getInfo("https://apipdtc.herokuapp.com/deportes");
+  }, [info]);
 
   return (
     <div className="container-fluid">
-      <h1 className="text-center my-2" id="canchas">
+      <h1 className="text-center my-3" id="canchas">
         Nuestras canchas
       </h1>
       <div className="card-container">
@@ -32,7 +32,7 @@ const SportLink = () => {
               <p className="card-text">
                 Vení a conocer las mejores canchas de {sport.deporte} del país!
               </p>
-              <Link to={sport.deporte}>
+              <Link to={`${sport.deporte}`}>
                 <button className=" btn btn-primary">Ver canchas</button>
               </Link>
             </div>

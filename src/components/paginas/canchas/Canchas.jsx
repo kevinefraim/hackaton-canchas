@@ -10,8 +10,8 @@ const Canchas = () => {
   const { getInfo, info } = useContext(Context);
 
   useEffect(() => {
-    getInfo(id);
-  }, [info]);
+    getInfo(`https://apipdtc.herokuapp.com/${id}`);
+  }, [id]);
 
   return (
     <main>

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&family=Ubuntu&display=swap");
 * {
   box-sizing: border-box;
+  font-family: "Shippori Antique B1", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }

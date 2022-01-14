@@ -1,10 +1,13 @@
 import "./Navbar.css";
 import logo from "../../img/logo.png";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Context } from "../../store/appContext";
 const Navbar = () => {
+  const { reservas } = useContext(Context);
   return (
     <header>
-      <div className="nav-container">
+      <div className="nav-container shadow">
         <nav className="navbar navbar-light  justify-content-between">
           <div className="left-nav">
             <Link to="/">
@@ -34,16 +37,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="right-nav">
-            <form className="form-inline">
-              <input
-                className="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </form>
-
-            <i className="bi bi-heart-fill font-heart"></i>
+            <i class="bi bi-cart cart-icon">{reservas.length}</i>
           </div>
         </nav>
       </div>

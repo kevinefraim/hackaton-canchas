@@ -7,7 +7,7 @@ const Carrusel = () => {
   return (
     <div
       id="carouselExampleSlidesOnly"
-      className="carousel slide"
+      className="carousel slide shadow"
       data-ride="carousel"
     >
       <div className="carousel-inner">
