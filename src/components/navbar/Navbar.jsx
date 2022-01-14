@@ -16,7 +16,7 @@ const Navbar = () => {
             <ul className="nav-list">
               <li>
                 <Link to="/" className="links">
-                  <i class="bi bi-house-fill"></i>
+                  <i className="bi bi-house-fill"></i>
                 </Link>
               </li>
               <li>
@@ -37,7 +37,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="right-nav">
-            <i class="bi bi-cart cart-icon">{reservas.length}</i>
+            <i className="bi bi-cart cart-icon">{reservas.length}</i>
           </div>
         </nav>
       </div>

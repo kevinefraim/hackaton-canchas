@@ -55,7 +55,7 @@ const Cancha = ({
     notify();
     setTime("");
   };
-  console.log(reservas);
+
   return (
     <div className="card shadow mb-3">
       <div className="row g-0">
@@ -73,47 +73,55 @@ const Cancha = ({
             <p>
               <b>Techada:</b> {techo ? "Si" : "No"}
             </p>
-            <div>
-              {horarios.map((horario) => (
-                <>
-                  <button
-                    onClick={() => setTime(horario)}
-                    className="mx-2 my-4  btn btn-outline-success"
-                    disabled={reservas.find(
-                      (reserva) =>
-                        reserva.id === id && reserva.horario.id === horario.id
-                    )}
-                  >
-                    {horario.hora}
-                  </button>
-                </>
-              ))}
-              <button onClick={addReserva} className="btn btn-success d-block">
-                Reservar
-              </button>
-              <ToastContainer
-                position="top-right"
-                autoClose={1500}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-              />
-              <ToastContainer
-                position="top-right"
-                autoClose={1500}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-              />
+            <div className="d-flex flex-wrap">
+              {horarios &&
+                horarios.map((horario) => (
+                  <div key={horario.id}>
+                    <button
+                      onClick={() => setTime(horario)}
+                      className={`mt-3 ms-3 btn ${
+                        time.hora === horario.hora
+                          ? "btn-success"
+                          : "btn-outline-success"
+                      }`}
+                      disabled={reservas.find(
+                        (reserva) =>
+                          reserva.horario.id === horario.id && reserva.id === id
+                      )}
+                    >
+                      {horario.hora}
+                    </button>
+                  </div>
+                ))}
             </div>
+            <button
+              onClick={addReserva}
+              className="btn btn-success d-block mx-2 my-4"
+            >
+              Reservar
+            </button>
+            <ToastContainer
+              position="top-right"
+              autoClose={1500}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+            />
+            <ToastContainer
+              position="top-right"
+              autoClose={1500}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+            />
           </div>
         </div>
       </div>
