@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hackaton-canchas/static/css/main.88372166.css",
-    "main.js": "/hackaton-canchas/static/js/main.37654f6d.js",
+    "main.js": "/hackaton-canchas/static/js/main.f2f93987.js",
     "static/js/787.ed87f7e5.chunk.js": "/hackaton-canchas/static/js/787.ed87f7e5.chunk.js",
     "static/media/fb-logo.png": "/hackaton-canchas/static/media/fb-logo.193997c4b3b377b318e0.png",
     "static/media/banner-2.jpg": "/hackaton-canchas/static/media/banner-2.3536b8186827f13af7d6.jpg",
@@ -12,11 +12,11 @@
     "static/media/logo.png": "/hackaton-canchas/static/media/logo.1ff7c468df2a4a4451bc.png",
     "index.html": "/hackaton-canchas/index.html",
     "main.88372166.css.map": "/hackaton-canchas/static/css/main.88372166.css.map",
-    "main.37654f6d.js.map": "/hackaton-canchas/static/js/main.37654f6d.js.map",
+    "main.f2f93987.js.map": "/hackaton-canchas/static/js/main.f2f93987.js.map",
     "787.ed87f7e5.chunk.js.map": "/hackaton-canchas/static/js/787.ed87f7e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88372166.css",
-    "static/js/main.37654f6d.js"
+    "static/js/main.f2f93987.js"
   ]
 }
